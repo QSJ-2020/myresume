@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="reset.min.css">
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="swiper.min.css">
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="animate.css">
+    <link charset="utf-8" rel="stylesheet" type="text/css" href="index.css">
+
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <!-- loading -->
+    <section class="loading" id="loading">
+        <div class="con">
+            <h1>珠峰培训</h1>
+            <h2>交互简历</h2>
+        </div>
+        <div class="progress">
+            <em class="progressEm"></em>
+        </div>
+    </section>
+
+    <!-- phone -->
+    <section class="phone" id="phone">
+        <h2><img src="img/zf_phoneLogo.png" alt=""></h2>
+
+        <div class="time">00:00</div>
+        <div class="listen">
+            <div class="move"></div>
+            <div class="touch"></div>
+        </div>
+        <div class="details">
+            <div class="touch"></div>
+        </div>
+        <audio src="audio/bell.mp3" preload="none" loop id="listenMusic"></audio>
+        <audio src="audio/say.mp3" preload="none" id="detailsMusic"></audio>
+    </section>
+
+
+    <!-- message -->
+    <section class="message" id="message">
+        <ul class="messageList">
+            <li class="student">
+                老师你好，我是lol玩家闫老板
+                <em></em>
+                <img src="img/zf_messageStudent.png" alt="">
+            </li>
+
+            <li class="teacher">
+                学生你好，我是AP橘子船长导师
+                <em></em>
+                <img src="img/zf_messageLogo.png" alt="">
+            </li>
+
+            <li class="teacher">
+                你找我有啥事嘛
+                <em></em>
+                <img src="img/zf_messageLogo.png" alt="">
+            </li>
+
+            <li class="student">
+                我的AP船长一口橘子满血,但是刮痧
+                <em></em>
+                <img src="img/zf_messageStudent.png" alt="">
+            </li>
+
+            <li class="teacher">
+                那就是你没学到精髓，AP船长还是要看我
+                <em></em>
+                <img src="img/zf_messageLogo.png" alt="">
+            </li>
+
+            <li class="teacher">
+                你要学的东西还比较多，你可以试试AD上路站。
+                <em></em>
+                <img src="img/zf_messageLogo.png" alt="">
+            </li>
+
+            <li class="student">
+                都学了呀，可是屎都被锤出来了
+                <em></em>
+                <img src="img/zf_messageStudent.png" alt="">
+            </li>
+
+            <li class="student">
+                我只想说，傻逼游戏，懂得都懂
+                <em></em>
+                <img src="img/zf_messageStudent.png" alt="">
+            </li>
+
+            <li class="teacher">
+                你急了，你急了。
+                <em></em>
+                <img src="img/zf_messageLogo.png" />
+            </li>
+
+            <li class="teacher">
+                算了算了，放弃游戏吧好好学习，来珠峰学前端吧
+                <em></em>
+                <img src="img/zf_messageLogo.png" />
+            </li>
+
+            <li class="teacher">
+                详细的信息你看接下来的介绍吧。
+                <em></em>
+                <img src="img/zf_messageLogo.png" />
+            </li>
+
+        </ul>
+        <div class="keyBoard">
+            <span class="textTip"></span>
+            <span class="submit"></span>
+        </div>
+        <audio src="audio/music.mp3" preload="none" loop id="messageMusic"></audio>
+    </section>
+
+    <!-- cube -->
+    <section class="cube" id="cube">
+        <ul class="cubeBox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="tip"></div>
+    </section>
+
+    <!-- swiper -->
+    <section class="swiper" id="swiper">
+        <div class="return"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--课程大纲-->
+                <div class="swiper-slide page1">
+                    <dl id="makisu">
+                        <dt>课程大纲</dt>
+                        <dd><em>01</em><a href="#">JavaScript核心基础部分</a></dd>
+                        <dd><em>02</em><a href="#">JavaScript基础实战部分</a></dd>
+                        <dd><em>03</em><a href="#">JavaScript核心原理</a></dd>
+                        <dd><em>04</em><a href="#">jQuery源码级课程:从原理到实战</a></dd>
+                        <dd><em>05</em><a href="#">设计模式和设计规范</a></dd>
+                        <dd><em>06</em><a href="#">基于Promise模式的AJAX库</a></dd>
+                        <dd><em>07</em><a href="#">模块化和组件开发实战</a></dd>
+                        <dd><em>08</em><a href="#">协同开发和项目管理</a></dd>
+                        <dd><em>09</em><a href="#">后台服务,HTTP协议和Ajax</a></dd>
+                        <dd><em>10</em><a href="#">BAT企业级webApp开发与实战</a></dd>
+                        <dd><em>11</em><a href="#">React/Angular/gulp/webpack</a></dd>
+                    </dl>
+                </div>
+                <!--课程体系-->
+                <div class="swiper-slide page2">
+                    <h2>课程体系</h2>
+                    <div class="box">
+                        <img src="img/zf_course.png" alt="" />
+                        <img src="img/zf_course1.png" alt="" />
+                        <img src="img/zf_course2.png" alt="" />
+                        <img src="img/zf_course3.png" alt="" />
+                        <img src="img/zf_course4.png" alt="" />
+                        <img src="img/zf_course5.png" alt="" />
+                        <img src="img/zf_course6.png" alt="" />
+                    </div>
+                </div>
+                <!--讲师介绍-->
+                <div class="swiper-slide page3">
+                    <h2></h2>
+                    <ul class="box">
+                        <li>
+                            <img src="img/zf_teacher1.png" />
+                            <div class="detail">
+                                <p>周啸天</p>
+                                <p>珠峰培训教学总监,曾任腾讯高级前端开发工程师</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_teacher2.png" />
+                            <div class="detail">
+                                <p>张仁阳</p>
+                                <p>珠峰培训技术总监,曾任用友软件、爱奇艺技术负责人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_teacher3.jpg" />
+                            <div class="detail">
+                                <p>姜文</p>
+                                <p>珠峰培训精英讲师,曾任百度高级前端开发工程师</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_teacher4.png" />
+                            <div class="detail">
+                                <p>田喜</p>
+                                <p>珠峰培训精英讲师,曾任猎豹移动高级前端开发工程师</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_teacher5.png" />
+                            <div class="detail">
+                                <p>张亚涛</p>
+                                <p>珠峰培训精英讲师,现任职百度高级前端开发工程师</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/zf_teacher6.png" />
+                            <div class="detail">
+                                <p>郭永峰</p>
+                                <p>珠峰培训精英讲师,现任职用友软件高级前端架构师、技术总监</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <<!--就业信息-->
+            <div class="swiper-slide page4">
+                <p>
+                    没有招生部门<br/>
+                    但学生数量<span>每年翻倍</span>
+                </p>
+
+                <p>
+                    没有就业部分<br/>
+                    但学生的平均薪资<span>超过一万二</span>
+                </p>
+
+                <h2>就业信息</h2>
+
+                <div class="box">
+                    <img src="img/zf_emploment.png" alt=""/>
+                </div>
+            </div>
+
+            <!--风采展示-->
+            <div class="swiper-slide page5">
+                <img src="img/zf_style1.jpg"/>
+                <img src="img/zf_style2.jpg"/>
+                <img src="img/zf_style3.jpg"/>
+
+                <div class="tip">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!--联系我们-->
+            <div class="swiper-slide page6">
+                <h2>
+                    <span>联系我们</span>
+                    <span>concat us</span>
+                </h2>
+                <ul class="concat">
+                    <li>
+                        <div class="icon"></div>
+                        <div class="textCon">
+                            <span>QQ:</span>1144709265<br/>
+                            <span>TEL:</span>4001806960<br/>
+                            <span>手机:</span>15010063579
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <div class="textCon">
+                            <span>学校地址:</span><br/>
+                            北京昌平区回龙观东大街3号楼02号东段珠峰培训
+                        </div>
+                    </li>
+                </ul>
+                <img src="img/zf_concatInfo.png"/>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- 导入需要的js -->
+    <script src="zepto.min.js"></script>
+    <script src="swiper.min.js"></script>
+    <script src="makisu.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
